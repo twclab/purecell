@@ -8,6 +8,7 @@ The repo contains the source code for our [paper](https://github.com/twclab/pure
 Basic usage
 
 ```
+from purecell.purecell import PureCell
 P = PureCell(anndata_object,batch_id='sample',label_id='type',n_neighbors=10,n_pcs=20)
 indices,nodes,scores,ths = P.run(0.5)
 ```
